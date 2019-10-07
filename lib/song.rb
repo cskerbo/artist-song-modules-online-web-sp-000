@@ -6,6 +6,7 @@ require_relative '../lib/concerns/paramble'
 class Song
   extend Memorable
   extend Findable
+  include Paramble
   attr_accessor :name
   attr_reader :artist
 
